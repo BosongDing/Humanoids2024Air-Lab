@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Head movement ASD</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,28 +52,28 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Imitation of human motion achieves natural head movements for
+              humanoid robots in an active-speaker detection task</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://research.tilburguniversity.edu/en/persons/bosong-ding" target="_blank">Bosong Ding</a><sup></sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://www.crossvalidate.me/" target="_blank">Murat Kirtay</a><sup></sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://spigler.net/giacomo/" target="_blank">Giacomo Spigler</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Tilburg University<br>Humanoids 2024</span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2407.11915" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,20 +82,10 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
+                    
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/BosongDing/Humanoids2024HRI" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -104,7 +94,7 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
+                <!-- ArXiv abstract Link
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
@@ -112,7 +102,7 @@
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
-                </a>
+                </a> -->
               </span>
             </div>
           </div>
@@ -129,11 +119,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/banner.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        
       </h2>
     </div>
   </div>
@@ -148,7 +138,22 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Head movements are crucial for social human-
+human interaction. They can transmit important cues (e.g.,
+joint attention, speaker detection) that cannot be achieved
+with verbal interaction alone. This advantage also holds for
+human-robot interaction. Even though modeling human mo-
+tions through generative AI models has become an active
+research area within robotics in recent years, the use of
+these methods for producing head movements in human-
+robot interaction remains underexplored. In this work, we
+employed a generative AI pipeline to produce human-like head
+movements for a Nao humanoid robot. In addition, we tested
+the system on a real-time active-speaker tracking task in a
+group conversation setting. Overall, the results show that the
+Nao robot successfully imitates human head movements in a
+natural manner while actively tracking the speakers during the
+conversation
           </p>
         </div>
       </div>
@@ -165,32 +170,41 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Schematics of the proposed method for generating head-gaze movements from human motion data (methods III-A), along with the example
+application to an active-speaker gazing task. The models are obtained by first training a variational autoencoder to model human motion data (methods
+III-B). Next, a multilayer perceptron (MLP) is trained to map end fixation points of the training trajectories into the corresponding latent vectors z learned by
+the encoder (methods III-C). The system can then be used by first converting desired fixation points into latent vectors, which are subsequently transformed
+into motion trajectories by the VAE decoder. In the active-speaker fixation task (methods III-D), audiovisual input from a camera mounted on the head of
+a Nao robot is inputted to the Light-ASD [8] active-speaker recognition module to retrieve bounding boxes of faces together with a confidence score for
+each possible speaker. Fixations are then decided by sampling a softmax distribution of the confidence scores.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/2.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Analysis of the capabilities of the proposed method to synthesize realistic head-gaze movements. (a) We generate and plot 200 random trajectories
+by sampling latent vectors from the VAE prior distribution z ∼ N (0, I), and compare them to the human motion data from Figure 3. (b) We evaluate
+the capacity of the system to generate desired head-motion trajectories to look at target points. To do so, we select a set of 21 × 21 target fixations on a
+grid [−1, 1] × [−1, 1] (normalized yaw/pitch coordinates), and generate trajectories to reach each of them. The final fixation point for each trajectory is
+shown as a distortion grid. The MSE in original coordinates is approximately 3.7 degrees. (c) A subset of 5 × 5 fixation points on the same grid (colored
+in red in the middle panel) is selected to show the individual trajectories generated to reach each target. Trajectories are divided into segments (alternating
+in red and blue color) to show the angular velocities in the yaw and pitch directions at each timestep.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/3.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Example of head movements on a Nao robot using our proposed method versus the default controller. (a-b) Initial and final pictures during a Nao
+fixation movement. (c) We track the red marker on Nao’s nose (in pixel coordinates) during the fixation movement, using our method versus the default
+controller. (d-e) We report encoder readings from the Nao’s head showing the robot’s yaw and pitch angles while moving to a target configuration (d) or
+executing a trajectory (‘target’) generated using our proposed method.
        </h2>
      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
+   
   </div>
 </div>
 </div>
@@ -199,52 +213,23 @@
 
 
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Active Speaker Detection with Generative/ default movment.</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <source src="static/videos/gen.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+            <source src="static/videos/default.mp4"
             type="video/mp4">
           </video>
         </div>
@@ -254,31 +239,11 @@
 </section>
 <!-- End video carousel -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>BibTex Code Upcoming</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
